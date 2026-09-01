@@ -1,0 +1,21 @@
+# MacOS
+.DS_Store
+
+# Node / React
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+
+# Testing
+coverage/
+
+# PWA
+sw.js
+workbox-*.js
