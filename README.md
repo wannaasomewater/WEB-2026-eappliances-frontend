@@ -1,4 +1,4 @@
-# Electrical Appliances Frontend (Laboratory Work 5)
+# Electrical Appliances Frontend
 
 SPA на React + TypeScript для просмотра каталога электротехники. В проекте используются mock-данные (без бэкенда), реализована фильтрация по мощности, подстановка изображений по умолчанию и нижняя навигация.
 
