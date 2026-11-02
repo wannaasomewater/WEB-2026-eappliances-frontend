@@ -47,6 +47,7 @@ SPA на React + TypeScript для просмотра каталога элек�
 
 ## Структура проекта
 
+```text
   src/
     components/
       ApplianceCard.tsx   # Карточка товара с обработкой заглушек
