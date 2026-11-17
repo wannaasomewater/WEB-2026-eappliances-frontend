@@ -6,4 +6,5 @@ export interface ElectricalAppliance {
   price: number;
   image?: string;
   video?: string;
+  likes?: number;
 }

@@ -3,14 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { BottomNav } from './components/BottomNav';
 import { FeedPage } from './pages/FeedPage';
 import { GridPage } from './pages/GridPage';
-import { Container } from 'react-bootstrap';
-
-const PlaceholderPage: React.FC<{ title: string }> = ({ title }) => (
-  <Container className="mt-4 text-center">
-    <h2>{title}</h2>
-    <p className="text-muted">Эта страница находится в разработке.</p>
-  </Container>
-);
+import { AddPage } from './pages/AddPage';
+import { LoginPage } from './pages/LoginPage';
 
 function App() {
   return (
@@ -18,13 +12,12 @@ function App() {
       <Routes>
         <Route path="/" element={<FeedPage />} />
         <Route path="/grid" element={<GridPage />} />
-        <Route path="/add" element={<PlaceholderPage title="Добавление услуги" />} />
-        <Route path="/login" element={<PlaceholderPage title="Вход" />} />
+        <Route path="/add" element={<AddPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <BottomNav />
     </Router>
   );
 }
-
 export default App;
